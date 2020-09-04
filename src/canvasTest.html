@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<button id="btnNext">Next</button>
+<script>
+    class Rectangle{
+        constructor(width,height,x,y,color){
+            this.width =width;
+            this.height =height;
+            this.x =x;
+            this.y =y;
+            this.color =color;
+        }
+    }
+    let rec2 = new Rectangle(500,100,10,10,"black");
+    let rec3 = new Rectangle(500,100,300,10,"black");
+
+function draw(rec1){
+    ctx.beginPath();
+    ctx.fillStyle=rec1.color;
+    ctx.fillRect(rec1.x ,rec1.y,rec1.width,rec1.height);
+    console.log("oke")
+}
+
+    let canvas = document.getElementById("canvas");
+    ctx = canvas.getContext("2d");
+    ctx.fillStyle=rec2.color;
+    ctx.fillRect(rec2.x ,rec2.y,rec2.width,rec2.height);
+
+function next(){
+    rec2.x +=100;
+    draw(rec2)
+    console.log(rec2);
+}
+    var btnNext = document.getElementById("btnNext");
+    btnNext.addEventListener("click", next);
+
+
+</script>
+</body>
+</html>
