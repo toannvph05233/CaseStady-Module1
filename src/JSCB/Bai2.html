@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="le">1</div>
+<div id="chan">0</div>
+<button onclick="clickChangNumber(document.getElementById('chan'))">Chẵn</button>
+<button onclick="clickChangNumber(document.getElementById('le'))">Lẻ</button>
+<button onclick="autoClick()">AutoClick</button>
+</body>
+</html>
+<script>
+    function clickChangNumber(element) {
+        var numbe = parseInt(element.innerText);
+        if (numbe % 2 == 0){
+            if (numbe >= 100) {
+                element.innerText = 100;
+            } else {
+                element.innerText = numbe + 2;
+            }
+        }else {
+            if (numbe >= 111) {
+                element.innerText = 111;
+            } else {
+                element.innerText = numbe + 2;
+            }
+        }
+    }
+
+
+    function autoClick() {
+        var le = document.getElementById("le").innerText;
+        var chan = document.getElementById("chan").innerText;
+        var intervalLe = setInterval(function () {
+            le = document.getElementById("le").innerText;
+            if (parseInt(le) >= 111) {
+                clearInterval(intervalLe);
+            } else {
+                document.getElementById("le").innerText = parseInt(le) + 2;
+            }
+        }, 200);
+        var intervalChan = setInterval(function () {
+            chan = document.getElementById("chan").innerText;
+            if (parseInt(chan) >= 100) {
+                clearInterval(intervalChan);
+            } else {
+                document.getElementById("chan").innerText = parseInt(chan) + 2;
+            }
+        }, 200);
+
+    }
+
+</script>

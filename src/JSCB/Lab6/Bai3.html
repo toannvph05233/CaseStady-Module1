@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Form Validation</h2>
+    <form>
+        <div class="form-group">
+            <label for="uname">Username:</label>
+
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+
+            <div id="unamefield"></div>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+
+            <div id="pwdfield"></div>
+        </div>
+        <div class="form-group form-check">
+            <label class="form-check-label">
+
+                <input class="form-check-input" onchange="displayEmail()" type="checkbox" id="isEmail" name="remember"> Bạn có muốn nhập Email!
+
+                <div id="email"></div>
+            </label>
+        </div>
+        <button onclick="validate()" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<script>
+    function validate() {
+        var user = document.getElementById("uname").value;
+        var passw = document.getElementById("pwd").value;
+        if (user == ""){
+            document.getElementById("unamefield").innerHTML = "<h1 style='color: red'>vui lòng nhập vào đây</h1>"
+        }else {
+            document.getElementById("unamefield").innerText ="";
+        }
+        if (passw == ""){
+            document.getElementById("pwdfield").innerHTML = "<h1 style='color: red'>vui lòng nhập vào đây</h1>"
+        }else {
+            document.getElementById("pwdfield").innerText = "";
+        }
+    }
+    function displayEmail() {
+        var email = document.getElementById("isEmail").checked;
+        if (email){
+            document.getElementById("email").innerHTML = `<input type="password" class="form-control" id="email" placeholder="Nhập Email" name="email" required>`
+        }else {
+            document.getElementById("email").innerHTML ="";
+        }
+    }
+</script>
+
+</body>
+</html>

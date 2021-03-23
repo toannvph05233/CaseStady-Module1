@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Promise
+
+    var prm = new Promise(function (resolve, reject) {
+        console.log("Đã ngủ dậy");
+        setTimeout(function(){
+            console.log("Đang đánh răng!");
+            return resolve("Đã đánh răng xong!")
+        }, 2000);
+    })
+
+    prm.then(function (data) {
+        console.log(data)
+    }).then(function () {
+        setTimeout(function(){
+            console.log("Đang thay quan ao!");
+
+        }, 2000);
+    }).then(function () {
+        console.log("Đã thay quần áo xong!")
+    })
+</script>
+
+</body>
+</html>

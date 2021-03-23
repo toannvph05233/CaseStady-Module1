@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1>Xin chào đến với trang web của tôi!</h1>
+</div>
+<div class="container">
+    <button onclick="openWGoogle()">Mở cửa sổ mới</button>
+    <button onclick="closeW()">Đóng cửa sổ mới</button>
+    <button onclick="check()">Check sổ mới</button>
+</div>
+<script>
+    let isOpen = 0;
+    function openWGoogle() {
+        isOpen = 1;
+        google = window.open('http://google.com', 'google', 'width=500,height=600');
+
+    }
+    function closeW() {
+        google.close();
+        isOpen = 0;
+    }
+    function check() {
+        if (isOpen == 0) {
+            alert( "chưa mở" )
+        }
+        else{
+            alert( "đã mở" )
+        }
+
+    }
+
+</script>
+</body>
+</html>

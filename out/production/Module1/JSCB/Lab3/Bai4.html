@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+    <link rel="stylesheet" href="cssmaytinh.css">
+</head>
+<style>
+    button{
+        width: 80px;
+        height: 50px;
+    }
+    #hienthi{
+        height: 50px;
+        background: #f9ff9b;
+        text-align: right;
+
+    }
+</style>
+<body>
+<table>
+    <tr>
+        <td colspan="7" id="hienthi"></td>
+    </tr>
+    <tr>
+        <td><button id="rad">Rad</button> </td>
+        <td><button id="null"></button></td>
+        <td><button id="xchamthan">X!</button></td>
+        <td><button id="mongoac">(</button></td>
+        <td><button id="dongngoac">)</button></td>
+        <td><button id="phantram">%</button></td>
+        <td><button onclick="xoa()" id="ac">AC</button></td>
+    </tr>
+    <tr>
+        <td><button id="inv">Inv</button></td>
+        <td><button id="sin">sin</button></td>
+        <td><button id="in">In</button></td>
+        <td><button onclick="nhapso7()" value="7" id="so7">7</button></td>
+        <td><button onclick="nhapso8()" value="8"id="so8">8</button></td>
+        <td><button onclick="nhapso9()" value="9"id="so9">9</button></td>
+        <td><button onclick="chia()" value=":"id="chia">:</button></td>
+    </tr>
+    <tr>
+        <td><button id="chun">n</button></td>
+        <td><button id="cos">cos</button></td>
+        <td><button id="log">log</button></td>
+        <td><button onclick="nhapso4()" value="4" id="so4">4</button></td>
+        <td><button onclick="nhapso5()" value="5" id="so5">5</button></td>
+        <td><button onclick="nhapso6()" value="6" id="so6">6</button></td>
+        <td><button onclick="nhan()" value="X" id="nhan">X</button></td>
+    </tr>
+    <tr>
+        <td><button id="chue">e</button></td>
+        <td><button id="tan">tan</button></td>
+        <td><button id="chuv">V</button></td>
+        <td><button onclick="nhapso1()" id="so1" value="1">1</button></td>
+        <td><button onclick="nhapso2()" value="2" id="so2">2</button></td>
+        <td><button onclick="nhapso3()" value="3" id="so3">3</button></td>
+        <td><button onclick="tru()" value="-"id="tru">-</button></td>
+    </tr>
+    <tr>
+        <td><button id="ans">Ans</button></td>
+        <td><button id="exp">Exp</button></td>
+        <td><button id="xbinhy">xY</button></td>
+        <td><button onclick="nhapso0()" value="0" id="so0">0</button></td>
+        <td><button id="cham">.</button></td>
+        <td><button onclick="bang()" id="bang">=</button></td>
+        <td><button onclick="cong()" value="+" id="cong">+</button></td>
+    </tr>
+
+</table>
+<script>
+    var so;
+    var so1;
+    var chuoi = 0;
+    var toantu=1;
+
+    function nhapso1() {
+        let so1=document.getElementById("so1").innerHTML;
+        document.getElementById("hienthi").innerHTML += so1;
+
+    }
+    function nhapso2() {
+        let so2=document.getElementById("so2").innerHTML;
+        document.getElementById("hienthi").innerHTML += so2;
+
+    }
+    function nhapso3() {
+        let so3=document.getElementById("so3").innerHTML;
+        document.getElementById("hienthi").innerHTML += so3;
+    }
+    function nhapso4() {
+        let so4=document.getElementById("so4").innerHTML;
+        document.getElementById("hienthi").innerHTML += so4;
+    }
+    function nhapso5() {
+        let so5=document.getElementById("so5").innerHTML;
+        document.getElementById("hienthi").innerHTML += so5;
+    }
+    function nhapso6() {
+        let so6=document.getElementById("so6").innerHTML;
+        document.getElementById("hienthi").innerHTML += so6;
+    }
+    function nhapso7() {
+        let so7=document.getElementById("so7").innerHTML;
+        document.getElementById("hienthi").innerHTML += so7;
+    }
+    function nhapso8() {
+        let so8=document.getElementById("so8").innerHTML;
+        document.getElementById("hienthi").innerHTML += so8;
+    }
+    function nhapso9() {
+        let so9=document.getElementById("so9").innerHTML;
+        document.getElementById("hienthi").innerHTML += so9;
+    }
+    function nhapso0() {
+        let so0=document.getElementById("so0").innerHTML;
+        document.getElementById("hienthi").innerHTML += so0;
+    }
+    function cong() {
+        so1 =document.getElementById("hienthi").innerHTML;
+        document.getElementById("hienthi").innerHTML="";
+        toantu=1;
+    }
+    function tru() {
+        so1 =document.getElementById("hienthi").innerHTML;
+        document.getElementById("hienthi").innerHTML="";
+        toantu=2;
+
+    }
+    function nhan() {
+        so1 =document.getElementById("hienthi").innerHTML;
+        document.getElementById("hienthi").innerHTML="";
+        toantu=3;
+
+    }
+    function chia() {
+        so1 =document.getElementById("hienthi").innerHTML;
+        document.getElementById("hienthi").innerHTML="";
+        toantu=4;
+
+    }
+    function xoa() {
+        document.getElementById("hienthi").innerHTML="";
+
+    }
+    function bang() {
+        if (toantu == 1) {
+            so2 = document.getElementById("hienthi").innerHTML;
+            console.log("so1:" + so1);
+            console.log("so2:" + so2);
+            var kq = parseInt(so1) + parseInt(so2);
+            document.getElementById("hienthi").innerHTML = kq;
+        }
+        if (toantu == 2) {
+            so2 = document.getElementById("hienthi").innerHTML;
+            console.log("so1:" + so1);
+            console.log("so2:" + so2);
+            var kq = parseInt(so1) - parseInt(so2);
+            document.getElementById("hienthi").innerHTML = kq;
+        }
+        if (toantu == 3) {
+            so2 = document.getElementById("hienthi").innerHTML;
+            console.log("so1:" + so1);
+            console.log("so2:" + so2);
+            var kq = parseInt(so1) * parseInt(so2);
+            document.getElementById("hienthi").innerHTML = kq;
+        }
+        if (toantu == 4) {
+            so2 = document.getElementById("hienthi").innerHTML;
+            console.log("so1:" + so1);
+            console.log("so2:" + so2);
+            var kq = parseInt(so1) / parseInt(so2);
+            document.getElementById("hienthi").innerHTML = kq;
+        }
+
+    }
+
+</script>
+</body>
+</html>

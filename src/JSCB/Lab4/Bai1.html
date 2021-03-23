@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var ptb2 = new Object();
+    ptb2.x = prompt("Hệ số x");
+    ptb2.y = prompt("Hệ số y");
+    ptb2.z = prompt("Hệ số z");
+    ptb2.giai = function (x,y,z) {
+        delta = (y * y - 4 * x * z)
+        if (delta == 0) {
+            x1 = -y / (2 * x);
+            x2 = -y / (2 * x);
+            alert('x1 = x2 = ' + x1);
+        } else if (delta < 0) {
+            alert("phuong trinh vo nghiem");
+        } else {
+            x1 = (-y - Math.sqrt(delta)) / (2 * x);
+            x2 = (-y + Math.sqrt(delta)) / (2 * x);
+            alert('phương trình có 2 nghiêm: x1 = ' + x1 + ' x2 = ' + x2);
+        }
+    };
+    ptb2.giai(ptb2.x,ptb2.y,ptb2.z);
+
+</script>
+</body>
+</html>

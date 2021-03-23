@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+
+    <p id="pin1"></p>
+    <input type="text" id="mes1"><br>
+    <textarea rows="5" cols="50" id="inbox1"></textarea><br>
+    <button onclick="sent(iphone,nokia,'mes1','inbox2')">Sent</button>
+    <button>TurnOn</button>
+    <button>TurnOF</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+    <p id="pin2"></p>
+    <input type="text" id="mes2"><br>
+    <textarea rows="5" cols="50" id="inbox2"></textarea><br>
+    <button onclick="sent(nokia,iphone,'mes2','inbox1')">Sent</button>
+    <button onclick="nokia.turnOn()">TurnOn</button>
+    <button>TurnOF</button>
+</div>
+
+</body>
+</html>
+<script>
+
+
+    let Mobile = function (name,statust,mesager,pin){
+        this.name = name;
+        this.statust = statust;
+        this.mesager = mesager;
+        this.pin = pin;
+        this.ibox = [];
+        this.contenner = []
+
+        this.getName = function (){
+            return this.name
+        }
+
+        this.getStatust = function (){
+            return this.statust
+        }
+
+        this.getMesager = function (){
+            return this.mesager
+        }
+
+        this.getPin = function (){
+            return this.pin
+        }
+        this.getContenner = function (){
+            return this.contenner
+        }
+
+        this.getIbox = function (){
+            return this.ibox
+        }
+
+        this.setName = function (name){
+             this.name = name
+        }
+
+        this.setStatust = function (statust){
+             this.statust = statust;
+        }
+
+        this.setMesager = function (mesager){
+             this.mesager = mesager;
+        }
+        this.setContenner = function (contenner){
+            this.contenner = contenner;
+        }
+
+        this.setPin = function (pin){
+             this.pin = pin;
+        }
+
+        this.setIbox = function (ibox){
+             this.ibox = ibox;
+        }
+
+//
+        this.turnOn = function (){
+            this.statust = true;
+        }
+
+        this.turnOf = function (){
+            this.statust = false;
+        }
+
+        this.sent = function (mobileNhan){
+            if (this.statust){
+                this.contenner.push(this.mesager);
+                mobileNhan.ibox.push(this.mesager);
+                this.pin -= 5;
+            }else {
+                alert('Bật máy')
+            }
+        }
+
+        this.sacPin = function (){
+            if (this.pin < 100){
+                this.pin ++;
+            }else {
+                alert("đầy pin")
+            }
+        }
+
+        this.truPin = function (){
+            this.pin = this.pin - 5;
+        }
+
+    }
+
+    let iphone = new Mobile('Iphone',true,'',20);
+    let nokia = new Mobile('Nokia',false,'',20);
+
+
+    function sent(mobileSent,MobileNhan,idMes,idInbox){
+        if(mobileSent.getPin()>0){
+            let mes = document.getElementById(idMes).value;
+            document.getElementById(idMes).value = '';
+            mobileSent.setMesager(mes);
+            mobileSent.sent(MobileNhan);
+            display(idInbox,MobileNhan);
+            document.getElementById('pin1').innerText = iphone.getPin();
+            document.getElementById('pin2').innerText = nokia.getPin();
+        } else {
+            mobileSent.turnOf();
+            alert("hết pin")
+        }
+    }
+
+    function display(idInbox,mobileNhan){
+        document.getElementById(idInbox).value = '';
+        let inboxNokia = mobileNhan.getIbox();
+        for(let i = 0;i<inboxNokia.length;i++){
+            document.getElementById(idInbox).value += inboxNokia[i] + '\n';
+        }
+    }
+
+
+document.getElementById('pin1').innerText = iphone.getPin();
+document.getElementById('pin2').innerText = nokia.getPin();
+
+</script>

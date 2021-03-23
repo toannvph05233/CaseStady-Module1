@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Form đăng ký</h2>
+    <form>
+        <div class="form-group">
+            <label for="uname">Họ:</label>
+
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+
+            <div id="unamefield"></div>
+        </div>
+        <div class="form-group">
+            <label>Tên:</label>
+
+            <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+
+            <div id="pwdfield"></div>
+        </div>
+        <div class="form-group">
+            <label>Ngày sinh:</label>
+
+            <input type="date" class="form-control" id="date">
+
+            <div id="datefield"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Giới tính:</label>
+            <br>
+            <select id="sex">
+                <option value="nam">Nam</option>
+                <br>
+                <option value="nu">Nữ</option>
+            </select>
+
+            <div id="sexfield"></div>
+        </div>
+        <div class="form-group">
+            <label>Sở thích:</label>
+            <br>
+            <input class="form-check-input" type="checkbox" id="sach" name="remember"> sách
+            <br>
+            <input class="form-check-input" type="checkbox" id="game" name="remember"> Game
+
+            <div id="stfield"></div>
+        </div>
+
+        <button onclick="validate()" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<script>
+    function validate() {
+        var user = document.getElementById("uname").value;
+        var passw = document.getElementById("pwd").value;
+        var date = document.getElementById("date").value;
+        var sach = document.getElementById("sach").checked;
+        var game = document.getElementById("game").checked;
+
+        if (user == "") {
+            document.getElementById("unamefield").innerHTML = "<h1 style='color: red'>vui lòng nhập Họ</h1>"
+        } else {
+            document.getElementById("unamefield").innerText = "";
+        }
+        if (passw == "") {
+            document.getElementById("pwdfield").innerHTML = "<h1 style='color: red'>vui lòng nhập Tên</h1>"
+        } else {
+            document.getElementById("pwdfield").innerText = "";
+        }
+        if (date == "") {
+            document.getElementById("datefield").innerHTML = "<h1 style='color: red'>vui lòng nhập Ngày sinh</h1>"
+        } else {
+            document.getElementById("datefield").innerText = "";
+        }
+        if (sach == false && game == false) {
+            document.getElementById("stfield").innerHTML = "<h1 style='color: red'>vui lòng chọn sở thích</h1>"
+        } else {
+            document.getElementById("stfield").innerText = "";
+        }
+
+
+    }
+
+
+    function displayEmail() {
+        var email = document.getElementById("isEmail").checked;
+        if (email) {
+            document.getElementById("email").innerHTML = `<input type="password" class="form-control" id="email" placeholder="Nhập Email" name="email" required>`
+        } else {
+            document.getElementById("email").innerHTML = "";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1>Xin chào đến với trang web của tôi!</h1>
+</div>
+<div class="container">
+    <h2 align="center">Nhập giá trị</h2>
+    Name : <input type="text" id="Name"><br><br>
+    Price : <input type="text" id="Price"><br><br>
+    <br>
+    <button onclick="createProduct()" class="btn btn-primary">ADD</button>
+    <br>
+    <br>
+    <br>
+    <h2>List Product</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody id="tbody2">
+
+        </tbody>
+    </table>
+    <br><br><br>
+    <hr>
+    <h2>Giỏ hàng</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody id="tbody3">
+
+        </tbody>
+    </table>
+    <h1 id="sum"> </h1>
+    <br><br><br>
+    <hr>
+</div>
+<div class="jumbotron text-center">
+    <h1>Xin chào đến với trang web của tôi!</h1>
+</div>
+</body>
+</html>
+<script>
+    function Product(name, price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    var listProducts = [new Product("Iphone6", 222)];
+
+    var listProductsMua = [];
+
+    function createProduct() {
+        let name = document.getElementById('Name').value;
+        let price = document.getElementById('Price').value;
+        listProducts.push(new Product(name,price));
+        showProduct();
+    }
+    window.byProduct = function(i) {
+        listProductsMua.push(listProducts[i]);
+        showByProduct();
+        sumPrice();
+    }
+
+    function showProduct() {
+        let str = '';
+        for (let i = 0; i < listProducts.length; i++) {
+            str += `<tr>
+           <td>${listProducts[i].name}</td>
+           <td>${listProducts[i].price}</td>
+
+           <td><button onclick="byProduct(${i})">Them</button></td>
+           </tr>`
+        }
+        document.getElementById('tbody2').innerHTML = str;
+    }
+    window.dropByProduct = function (i) {
+        for (let j = i; j< listProductsMua.length;j++){
+            listProductsMua[j] = listProductsMua[j+1];
+        }
+        listProductsMua.pop();
+        console.log(listProductsMua)
+        showByProduct();
+        sumPrice();
+    }
+    function showByProduct() {
+        let str = '';
+        for (let i = 0; i < listProductsMua.length; i++) {
+            str += `<tr>
+           <td>${listProductsMua[i].name}</td>
+           <td>${listProductsMua[i].price}</td>
+
+           <td><button onclick="dropByProduct(${i})">xóa</button></td>
+           </tr>`
+        }
+        document.getElementById('tbody3').innerHTML = str;
+    }
+
+
+    showProduct();
+
+    function sumPrice() {
+        let sum =0;
+        for (let i = 0; i < listProductsMua.length; i++) {
+            sum += listProductsMua[i].price;
+        }
+        document.getElementById("sum").innerText = "Tổng bằng = " + sum;
+    }
+    sumPrice();
+
+</script>

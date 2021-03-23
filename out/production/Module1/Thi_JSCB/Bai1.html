@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>8</p>
+<p>7</p>
+<p>6</p>
+<p>5</p>
+<p></p>
+<p>1</p>
+<p>3</p>
+<button onclick="changColor()">Biến đổi</button>
+</body>
+</html>
+<script>
+    var arr = document.getElementsByTagName("p");
+    console.log(arr[4].innerText)
+
+    function changColor() {
+        for (let i = 0; i < arr.length; i++) {
+            if (parseInt(arr[i].innerText) % 4 == 0) {
+                arr[i].style.color = "blue";
+            } else {
+                if (parseInt(arr[i].innerText) % 4 == 1) {
+                    arr[i].style.color = "yellow";
+                } else {
+                    if (parseInt(arr[i].innerText) % 4 == 2) {
+                        arr[i].style.color = "red";
+                    } else {
+                        if (arr[i].innerText == "") {
+                            arr[i].innerText = 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1>Xin chào đến với trang web của tôi!</h1>
+</div>
+<div class="container">
+    <h2 align="center">Nhập giá trị</h2>
+    Name : <input type="text" id="name"><br><br>
+    <button onclick="create()" class="btn btn-primary">ADD</button>
+    <br>
+    <br>
+    <div id="display"></div>
+</div>
+</body>
+</html>
+<script>
+    let arr = ["toàn","hoàng","tuấn"];
+    function create() {
+        arr.push(document.getElementById("name").value);
+        display();
+    }
+    function display() {
+        let str = '';
+        arr.sort();
+        arr.filter(function (name) {
+            str += `<li> ${name} </li> <br>`;
+        })
+        document.getElementById('display').innerHTML = str;
+    }
+    display();
+</script>

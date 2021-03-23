@@ -1,44 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="deea2acc-56f4-4925-8f9c-9dfc7e5b6d32" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="deea2acc-56f4-4925-8f9c-9dfc7e5b6d32" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Callvideo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
+  </component>
   <component name="ProjectId" id="1gl6uBtN3A4I35zsVXTGP3DVH3N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/CodeGym/casestady_module4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.27913278" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Module1\src" />
+      <recent name="D:\Module1\src\JSNC" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Module1\src\games" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BaiC">
+    <configuration name="BaiA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaiA" />
+      <module name="Module1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaiC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thi_JSCB.BaiC" />
+      <module name="Module1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Thi_JSCB.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaiK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaiK" />
+      <module name="Module1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C" />
+      <module name="Module1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="Module1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <item itemvalue="Application.BaiC" />
+        <item itemvalue="Application.BaiK" />
+        <item itemvalue="Application.C" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.BaiA" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -56,10 +148,108 @@
       <workItem from="1598867616923" duration="633000" />
       <workItem from="1598923200931" duration="6131000" />
       <workItem from="1599104456645" duration="1435000" />
+      <workItem from="1599190700710" duration="7711000" />
+      <workItem from="1599291695802" duration="285000" />
+      <workItem from="1600220571387" duration="2015000" />
+      <workItem from="1600325738559" duration="127000" />
+      <workItem from="1600329663837" duration="42000" />
+      <workItem from="1600574762072" duration="2105000" />
+      <workItem from="1600670531358" duration="305000" />
+      <workItem from="1600684665339" duration="25000" />
+      <workItem from="1605007760061" duration="2777000" />
+      <workItem from="1605061696208" duration="869000" />
+      <workItem from="1605605711154" duration="7236000" />
+      <workItem from="1605773645882" duration="237000" />
+      <workItem from="1605774048765" duration="1949000" />
+      <workItem from="1605835406926" duration="1232000" />
+      <workItem from="1605945464106" duration="3367000" />
+      <workItem from="1606206600823" duration="2023000" />
+      <workItem from="1606211327493" duration="6413000" />
+      <workItem from="1606272681162" duration="23000" />
+      <workItem from="1606288441593" duration="623000" />
+      <workItem from="1606375086111" duration="669000" />
+      <workItem from="1606380132050" duration="1320000" />
+      <workItem from="1606443057568" duration="69000" />
+      <workItem from="1606548952253" duration="3865000" />
+      <workItem from="1606815759162" duration="3241000" />
+      <workItem from="1606822444543" duration="4801000" />
+      <workItem from="1606873201151" duration="47000" />
+      <workItem from="1607428975102" duration="765000" />
+      <workItem from="1607430184370" duration="1288000" />
+      <workItem from="1607766509598" duration="5654000" />
+      <workItem from="1607911677614" duration="34000" />
+      <workItem from="1608031757336" duration="1356000" />
+      <workItem from="1608295509253" duration="205000" />
+      <workItem from="1608390215754" duration="7000" />
+      <workItem from="1608781200723" duration="4461000" />
+      <workItem from="1608868006403" duration="2544000" />
+      <workItem from="1611480391796" duration="1675000" />
+      <workItem from="1611656023709" duration="2524000" />
+      <workItem from="1611717474128" duration="934000" />
+      <workItem from="1611803521124" duration="6262000" />
+      <workItem from="1611883595994" duration="4246000" />
+      <workItem from="1612144702704" duration="83000" />
+      <workItem from="1612231964226" duration="9657000" />
+      <workItem from="1612314213323" duration="4340000" />
+      <workItem from="1612402152310" duration="26000" />
+      <workItem from="1612403822384" duration="4666000" />
+      <workItem from="1612490269268" duration="4366000" />
+      <workItem from="1613523414652" duration="5230000" />
+      <workItem from="1613544924372" duration="3570000" />
+      <workItem from="1613613062992" duration="4421000" />
+      <workItem from="1613696965235" duration="2309000" />
+      <workItem from="1613977266414" duration="1051000" />
+      <workItem from="1614048630134" duration="10701000" />
+      <workItem from="1614149765601" duration="4073000" />
+      <workItem from="1614182003984" duration="32000" />
+      <workItem from="1614219332252" duration="2934000" />
+      <workItem from="1614237487947" duration="1014000" />
+      <workItem from="1614399688921" duration="16756000" />
+      <workItem from="1614563999056" duration="102000" />
+      <workItem from="1616338663696" duration="3433000" />
+      <workItem from="1616405024539" duration="480000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DP/Gun.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BaiA.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BaiK.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

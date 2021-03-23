@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>0</div>
+<div>1</div>
+<button onclick="clickColor()">Click</button>
+</body>
+</html>
+<script>
+    var arr = document.getElementsByTagName("div");
+    function changColor() {
+        for (let i =0;i< arr.length;i++){
+            if (parseInt(arr[i].innerText) % 3 == 1 ){
+                arr[i].style.color = "yellow";
+            } else {
+                if (parseInt(arr[i].innerText) % 3 == 2 ){
+                    arr[i].style.color = "red";
+                } else {
+                    arr[i].style.color = "blue";
+                }
+            }
+        }
+    }
+    function backColor() {
+        for (let i =0;i< arr.length;i++){
+                arr[i].style.color = "black";
+        }
+    }
+    var isClick = true;
+    function clickColor() {
+        if (isClick){
+            changColor();
+            isClick = false;
+        }else {
+            backColor();
+            isClick = true;
+        }
+    }
+</script>

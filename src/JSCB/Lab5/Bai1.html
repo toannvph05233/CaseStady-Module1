@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1>Xin chào đến với trang web của tôi!</h1>
+</div>
+<div class="container">
+    <label id="pro" data-price="1950">iPhone 9</label>
+    <input id="qty" type="number" />
+    <input id="inputName" type="text" placeholder="nhập name"/>
+    <button onclick="create()">OK</button>
+    <hr />
+    <h3>Name: <span id="name"></span></h3>
+    <h3>Amount: <span id="amount"></span></h3>
+
+</div>
+<script>
+    function create() {
+        let name = document.getElementById("inputName").value;
+        let qty = document.getElementById("qty").value;
+        document.getElementById("name").innerText = name;
+        document.getElementById("amount").innerText = qty;
+
+
+    }
+</script>
+</body>
+</html>

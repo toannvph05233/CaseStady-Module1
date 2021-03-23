@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="displayImg">
+    <img id="img" src="img/anh1.jpg" height="601" width="800"/></div>
+<hr/>
+<button onclick="first()">First</button>
+<button onclick="next()">Next</button>
+<button onclick="prev()">Prev</button>
+<button onclick="last()">Last</button>
+
+</body>
+</html>
+<script>
+    var cout = 1;
+function first() {
+   document.getElementById("img").src = 'img/anh1.jpg'
+}
+function next() {
+    if (cout>=3){
+        cout = 1;
+    }else {
+        cout++;
+    }
+    document.getElementById("img").src = `img/anh${cout}.jpg`
+}
+function prev() {
+    if (cout<=0){
+        cout = 3;
+    }else {
+        cout--;
+    }
+    document.getElementById("img").src = `img/anh${cout}.jpg`
+}
+function last() {
+    document.getElementById("img").src = 'img/anh3.jpg'
+}
+
+    </script>

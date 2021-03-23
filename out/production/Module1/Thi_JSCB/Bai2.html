@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="number">1</p>
+<button onclick="clickChangNumber()">Tăng</button>
+</body>
+</html>
+<script>
+    function checkNumber() {
+        let number = parseInt(document.getElementById("number").innerText);
+        if (number == 102) {
+            document.getElementById("number").innerText = 1;
+            return true;
+        }
+        if (number == 101) {
+            document.getElementById("number").innerText = 0;
+            return true;
+        }
+        return false;
+    }
+
+    function clickChangNumber() {
+        var numbe = parseInt(document.getElementById("number").innerText);
+        document.getElementById("number").innerText = numbe + 2;
+        checkNumber();
+    }
+</script>

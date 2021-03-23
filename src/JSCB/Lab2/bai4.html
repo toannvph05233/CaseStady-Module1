@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var x = Math.floor((Math.random() * 10) + 5);;
+
+    var checkWin = () => {
+        let input = prompt('nhập 1 số :');
+        if(input == x){
+            alert("win rồi")
+            return breck;
+        }
+        else if (input > x){
+            alert('nhập lớn hơn rồi')
+            return false;
+        }
+        else{
+            alert("nhập nhỏ hơn rồi")
+            return false;
+        }
+    }
+
+    var playGame = () =>{
+       while (checkWin() == false){
+       }
+    }
+     playGame();
+
+
+</script>

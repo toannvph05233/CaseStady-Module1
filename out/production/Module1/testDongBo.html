@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+     function aa() {
+       setTimeout(function (){
+           console.log("xin chào cả nhà")
+       }, 2000);
+    }
+
+    function aa2() {
+        return "đây là a2";
+    }
+
+    async function callback() {
+        console.log(await aa())
+        console.log(aa2())
+    }
+
+    callback();
+</script>
