@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deea2acc-56f4-4925-8f9c-9dfc7e5b6d32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Callvideo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module1/Callvideo.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module1/Callvideo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +30,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -78,10 +76,16 @@
       <recent name="D:\Module1\src\games" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BaiC">
-    <configuration name="BaiA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BaiA" />
+  <component name="RunManager" selected="Application.BB">
+    <configuration name="BB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Modul2.BB" />
       <module name="Module1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Modul2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BB" />
         <item itemvalue="Application.BaiC" />
         <item itemvalue="Application.BaiK" />
         <item itemvalue="Application.C" />
         <item itemvalue="Application.test" />
-        <item itemvalue="Application.BaiA" />
       </list>
     </recent_temporary>
   </component>
@@ -208,6 +212,30 @@
       <workItem from="1614563999056" duration="102000" />
       <workItem from="1616338663696" duration="3433000" />
       <workItem from="1616405024539" duration="480000" />
+      <workItem from="1616660210741" duration="622000" />
+      <workItem from="1616724600059" duration="6215000" />
+      <workItem from="1616819732334" duration="639000" />
+      <workItem from="1617001968384" duration="1982000" />
+      <workItem from="1617078068311" duration="1662000" />
+      <workItem from="1617587800526" duration="924000" />
+      <workItem from="1617675349467" duration="750000" />
+      <workItem from="1617934245027" duration="6256000" />
+      <workItem from="1618305762134" duration="2397000" />
+      <workItem from="1618369370019" duration="1421000" />
+      <workItem from="1618382220453" duration="6325000" />
+      <workItem from="1618449403184" duration="2658000" />
+      <workItem from="1618470751347" duration="1185000" />
+      <workItem from="1618482368824" duration="1470000" />
+      <workItem from="1618492457535" duration="597000" />
+      <workItem from="1618534799848" duration="5504000" />
+      <workItem from="1618578132906" duration="2362000" />
+      <workItem from="1618742785423" duration="608000" />
+      <workItem from="1618793400104" duration="1962000" />
+      <workItem from="1618814099159" duration="1189000" />
+      <workItem from="1621849514968" duration="2044000" />
+      <workItem from="1621925223624" duration="6397000" />
+      <workItem from="1622345698421" duration="2134000" />
+      <workItem from="1622456388742" duration="82000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<img src="dichuyencanvas.jpg" id="anh1" hidden height="160" width="314"/></body>
+<p>Canvas:</p>
+
+<canvas id="myCanvas" width="240" height="297"
+        style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.
+</canvas>
+<button onclick="runImg()">chay</button>
+<script>
+    // window.onload = function() {
+    //     var canvas = document.getElementById("myCanvas");
+    //     var ctx = canvas.getContext("2d");
+    //     var img = document.getElementById("anh1");
+    //     ctx.drawImage(img,0, 0, 60, 200, 50, 100, 100, 200);
+    // };
+    let cout = 0;
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var img = document.getElementById("anh1");
+    function runImg(){
+        ctx.clearRect(0, 0, 240, 297);
+        if (cout === 0){
+            ctx.drawImage(img,0, 0, 60, 200, 50, 100, 100, 200);
+            cout ++;
+        }else if (cout === 1){
+            ctx.drawImage(img,64, 0, 60, 200, 50, 100, 100, 200);
+            cout ++;
+        }else {
+            ctx.drawImage(img,120, 0, 60, 200, 50, 100, 100, 200);
+            cout = 0;
+        }
+        setTimeout(runImg,100);
+    }
+
+    if (+0===-0){alert("Aaa")}
+</script>
+</html>

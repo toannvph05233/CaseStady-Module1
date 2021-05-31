@@ -60,8 +60,35 @@
         return d;
     }
 
+
+
     function deg2rad(deg) {
         return deg * (Math.PI/180)
     }
+
+    // latitude and longitude of Two Points
+    latitude1 = 21.026657 ;
+    longitude1 = 105.77034019999999;
+    latitude2 = 21.024894;
+    longitude2 = 105.780297;
+
+    //Converting to radians
+    longi1 = deg2rad(longitude1);
+    longi2 = deg2rad(longitude2);
+    lati1 = deg2rad(latitude1);
+    lati2 = deg2rad(latitude2);
+
+    //Haversine Formula
+    difflong = longi2 - longi1;
+    difflat = lati2 - lati1;
+
+    val = Math.pow(Math.sin(difflat/2),2)+Math.cos(lati1)*Math.cos(lati2)*Math.pow(Math.sin(difflong/2),2);
+
+    res1 =3936* (2 * Math.asin(Math.sqrt(val))); //for miles
+    res2 =6378.8 * (2 * Math.asin(Math.sqrt(val))); //for kilometers
+
+    //display distance in miles
+    console.log("toạ độ 2 điểm là : " + res1 + " - " + res2 );
+
 </script>
 
